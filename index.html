@@ -36,7 +36,9 @@
             if(gPass == Answer || gPass == AnswerII){
             var obj = document.getElementById("apagar");
                obj.style.visible = false;
-                document.body.style.visibility = "visible";
+               document.body.style.visibility = "visible";
+             var element = document.getElementById("exibir");
+                element.style.visibility = "visible";
             }
             else{
                window.history.go(-1);
@@ -46,7 +48,7 @@
 
 </head>
 <body onload="PassWord()" style="visibility: hidden;">
-<div style="visibility: hidden;">
+<div style="visibility: hidden;" id="exibir">
     <nav class="navbar navbar-expand-md" style="background-color: #FFEB00;">
         <a href="#" class="navbar-brand" >Del Tião Neto <spam sytle=" color: red !important;">90.190</spam></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">

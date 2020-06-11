@@ -33,22 +33,19 @@
             Answer = "Eliel";
             
             gPass = window.prompt("Por favor entre com a senha","");
-            if(gPass != Answer || gPass != AnswerII){
-                window.history.go(-1);
-            }
-            else{
+            if(gPass == Answer || gPass == AnswerII){
             var obj = document.getElementById("apagar");
                obj.style.visible = false;
+                document.body.style.visibility = "visible";
+            }
+            else{
+               window.history.go(-1);
             }
         }
     </script>
 
 </head>
-<body onload="PassWord()">
-    
-    <div style="height: 100%; width: 100%; background-color: #FFEB00;" id="apagar">
-        <h1 style="color : #C80000">90.190</h1>
-    </div>
+<body onload="PassWord()" style="visibility: hidden;">
 
     <nav class="navbar navbar-expand-md" style="background-color: #FFEB00;">
         <a href="#" class="navbar-brand" >Del Tião Neto <spam sytle=" color: red !important;">90.190</spam></a>

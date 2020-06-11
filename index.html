@@ -36,11 +36,19 @@
             if(gPass != Answer || gPass != AnswerII){
                 window.history.go(-1);
             }
+            else{
+            var obj = document.getElementById("apagar");
+               obj.style.visible = false;
+            }
         }
     </script>
 
 </head>
 <body onload="PassWord()">
+    
+    <div style="height: 100%; width: 100%; background-color: #FFEB00;" id="apagar">
+        <h1 style="color : #C80000">90.190</h1>
+    </div>
 
     <nav class="navbar navbar-expand-md" style="background-color: #FFEB00;">
         <a href="#" class="navbar-brand" >Del Tião Neto <spam sytle=" color: red !important;">90.190</spam></a>

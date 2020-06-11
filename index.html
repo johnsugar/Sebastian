@@ -27,9 +27,20 @@
 
         }
     </style>
+    <script>
+        function PassWord(){
+            AnswerII = "Alexandre";
+            Answer = "Eliel";
+            
+            gPass = window.prompt("Por favor entre com a senha","");
+            if(gPass != Answer || gPass != AnswerII){
+                window.history.go(-1);
+            }
+        }
+    </script>
 
 </head>
-<body>
+<body onload="Password()">
 
     <nav class="navbar navbar-expand-md" style="background-color: #FFEB00;">
         <a href="#" class="navbar-brand" >Del Tião Neto <spam sytle=" color: red !important;">90.190</spam></a>
